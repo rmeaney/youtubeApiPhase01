@@ -7,5 +7,7 @@ form, #results { padding: 0 20px; }
 .item { margin-bottom: 25px; }
 .w100 { width: 100%; }
 
+.btn-copy { background: #952b2b; border-color: #957575; }
+.btn-copy:hover, .btn-copy:active, .btn-copy:focus { background: #782b2b;  border-color: #952b2b; }
 .btn-primary { background: #952b2b; border-color: #957575; }
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus { background: #782b2b;  border-color: #952b2b; }
