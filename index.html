@@ -18,58 +18,69 @@
             <div class="col-md-6 col-md-offset-3">
                 <form action="#">
                     <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
+
                     <p><input type="submit" value="Search" class="form-control btn btn-primary w20"></p>
-                    <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#search">Copy</button></p>
+                   <!--  <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#search">Copy</ button></p> -->
                 </form>
+                <!-- Rick's code -->
+                <form>
+                    <label><h2>Paste your youtube url here</h2></label>
+                    <!-- placeholder to target with copy button -->
+                    <p><input type = "text" id = "userUrl" placeholder="Type something..." autocomplete="off" class="form-control"/></p>
+                    <hr>
+
+                    <!-- jose's code -->
+                    <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#userUrl">Copy</button></p>
+                    <br/>
+                    
+
+                    <!--Begin Input start Time-->
+                    <h2>Select your start time</h2>
+                    <label>Hours</label>
+                    <input Type ="text" id = "userHoursInputStart" class ="userTimeInput" value = "0" size = "4">
+                    <label>Minutes</label>
+                    <input type ="text" id = "userMinutesInputStart" class ="userTimeInput" value = "0" size = "4">
+                    <label>Seconds</label>
+                    <input type = "text" id = "userSecondsInputStart" class ="userTimeInput" value = "0" size = "4">
+                    <br/>
+                    <!--End Input start Time-->
+
+                    
+
+                    <!--Begin Input start Time-->
+                    <h2>Select your End Time</h2>
+                    <label>Hours</label>
+                    <input Type ="text" id = "userHoursInputEnd" class ="userTimeInput" value = "0" size = "4">
+                    <label>Minutes</label>
+                    <input type ="text" id = "userMinutesInputEnd" class ="userTimeInput" value = "0" size = "4">
+                    <label>Seconds</label>
+                    <input type = "text" id = "userSecondsInputEnd" class ="userTimeInput" value = "0" size = "4">
+                    
+                    <!--End Input start Time-->
+                    <br>
+                    <br>
+                    <button id = "submitBTN">Make Link</button>
+                    
+                </form>
+
+            <div id = "outputLink">Your link will go here</div>
+                
                 <div id="results"></div>
-            </div>
-        </div>
-        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-    </script>
-
-        <!-- Rick's code -->
-        <form>
-    <label><h2>Paste your youtube url here</h2></label>
-    <input type = "text" id = "userUrl" size ="100">
-    <br/>
+                </div>
+                </div>
+                
     
-
-    <!--Begin Input start Time-->
-    <h2>Select your start time</h2>
-    <label>Hours</label>
-    <input Type ="text" id = "userHoursInputStart" class ="userTimeInput" value = "0" size = "4">
-    <label>Minutes</label>
-    <input type ="text" id = "userMinutesInputStart" class ="userTimeInput" value = "0" size = "4">
-    <label>Seconds</label>
-    <input type = "text" id = "userSecondsInputStart" class ="userTimeInput" value = "0" size = "4">
-    <br/>
-    <!--End Input start Time-->
-
-    
-
-    <!--Begin Input start Time-->
-    <h2>Select your End Time</h2>
-    <label>Hours</label>
-    <input Type ="text" id = "userHoursInputEnd" class ="userTimeInput" value = "0" size = "4">
-    <label>Minutes</label>
-    <input type ="text" id = "userMinutesInputEnd" class ="userTimeInput" value = "0" size = "4">
-    <label>Seconds</label>
-    <input type = "text" id = "userSecondsInputEnd" class ="userTimeInput" value = "0" size = "4">
-    <br/>
-    <!--End Input start Time-->
-    
-    <button id = "submitBTN">Make Link</button>
-    <br/>
-    </form>
-    <div id = "outputLink">Your link will go here</div>
         
         <!-- scripts -->
         <script src="js/clipboard.min.js"></script>
         <script src="js/script.js"></script>
         <!-- relaced with latest vertion -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="js/game.js"></script>
         <script src="js/app.js"></script>
         <script src="https://apis.google.com/js/client.js?onload=init"></script>
+        <script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
     </body>
 </html>
 
