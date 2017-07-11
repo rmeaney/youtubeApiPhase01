@@ -14,26 +14,22 @@
         <header>
             <h1 class="w100 text-center"><a href="index.html">YouTube Viral Search</a></h1>
         </header>
+
         <div class="row">
+
             <div class="col-md-6 col-md-offset-3">
+
                 <form action="#">
                     <p><input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" /></p>
-
                     <p><input type="submit" value="Search" class="form-control btn btn-primary w20"></p>
-                   <!--  <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#search">Copy</ button></p> -->
                 </form>
+
                 <!-- Rick's code -->
+
                 <form>
                     <label><h2>Paste your youtube url here</h2></label>
-                    <!-- placeholder to target with copy button -->
                     <p><input type = "text" id = "userUrl" placeholder="Type something..." autocomplete="off" class="form-control"/></p>
-                    <hr>
-
-                    <!-- Copy button  -->
-                   <!--  <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#userUrl">Copy</button></p>
-                    <br/> -->
-                    
-
+                                                 
                     <!--Begin Input start Time-->
                     <h2>Select your start time</h2>
                     <label>Hours</label>
@@ -44,9 +40,7 @@
                     <input type = "text" id = "userSecondsInputStart" class ="userTimeInput" value = "0" size = "4">
                     <br/>
                     <!--End Input start Time-->
-
-                    
-
+                   
                     <!--Begin Input start Time-->
                     <h2>Select your End Time</h2>
                     <label>Hours</label>
@@ -55,25 +49,23 @@
                     <input type ="text" id = "userMinutesInputEnd" class ="userTimeInput" value = "0" size = "4">
                     <label>Seconds</label>
                     <input type = "text" id = "userSecondsInputEnd" class ="userTimeInput" value = "0" size = "4">
-                    
                     <!--End Input start Time-->
-                    <br>
-                    <br>
+                    <hr>
+                    <!--  Button to create new video clip -->
                     <button id = "submitBTN" class="form-control btn btn-submit w25">Make Link</button>
                     <hr>
-                    <!-- Copy button  -->
-                    <p><button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#outputLink">Copy Generated Link</button></p>
-                    
-                </form>
 
-            <div id = "outputLink">Your link will go here</div>
-                
-                <div id="results"></div>
-                </div>
-                </div>
-                
-    
-        
+                    <div class="w100 text-center" id = "outputLink">Your link will go here</div>
+                    <hr>
+                    <!-- Copy Link  to Cipboard Button -->
+                    <button class="form-control btn btn-copy w25" data-clipboard-action="copy" data-clipboard-target="#outputLink">Copy Generated Link</button>
+
+                    <div id="results"></div>
+                </form>
+                   
+            </div>
+        </div>
+                      
         <!-- scripts -->
         <script src="js/clipboard.min.js"></script>
         <script src="js/script.js"></script>
